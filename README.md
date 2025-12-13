@@ -47,6 +47,34 @@ To obtain a comparative benchmark table for each type of time series under study
 | NAIV   | 22.0 | 45.0 | 0.0  | 21.0 | 50.0 | 41.0    | 179.0 |
 
 
+## Other Methods
+
+A large number of models, architectures, and approaches have been
+studied in the course of this paper preparations. Not all of them have
+shown effectiveness and good results. The following models and
+approaches were investigated in this paper, but not included among
+the best ones. Therefore their results are omitted:
+
+  1) RNN. MAPE is 4-5% higher than CNN. 
+  2) LSTM. MAPE is 9-10% higher than CNN.
+  3) BiLSTM. MAPE is 9-10% higher than CNN. 
+  4) LSTM-CNN. MAPE is 4-5% higher than CNN. 
+  5) BiLSTM-CNN. MAPE is 4-5% higher than CNN. 
+  6) Encoder-decoder based LSTM. It has 1-2% less precision than CNN. 
+  7) MLP (2 to 15 layers with 10/16/25/32/64 neurons). MAPE is 5-6% higher than CNN. 
+  8) Library TabNet. Prediction results made with this library with an enumeration of different internal parameters are 5-6% inferior to the selected CNN models.
+  9) The methods listed above and below with artificial expansion of the training sample using the Tsfresh library are inferior to the corresponding models CNN without artificial expansion of the training sample set by 4-5%. 
+  10) Prophet. MAPE is 1-2% higher than CNN.
+  11) CatBoost, AdaBoost, based on decision trees. These types of boosting are usually inferior to XGBoost by 1-2%.
+  12) Transformer NN by Chronos. The study included an assessment of the ``amazon/chronos-t5-small`` and ``amazon/chronos-t5-base`` models. While these architectures demonstrated competitive performance approaching state-of-the-art results, they failed to outperform the leading benchmarks in any experimental scenario. Consequently, these models do not appear in the comparative tables presented in this work.
+  13) NBeats by darts. MAPE is 9-10% higher than CNN.
+
+In all cases of neural network architectures, 1-3 layer models with
+5, 20, 32, 64, and 128 neurons per layer (in different combinations)
+and activators ``linear`` , ``tanh`` and ``relu`` for each layer
+were considered. The best results were obtained with the ``tanh``
+activator function on all layers.
+
 
 ## Content Description:
 
