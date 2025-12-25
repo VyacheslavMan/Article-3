@@ -25,7 +25,7 @@ To obtain a comparative benchmark table for each type of time series under study
 
 
 ### Ranking table for benchmarks for ACP
-|      | ARMA | CTCM | NAIV | NN  | TCM | XGBoost | Rank |
+|      | ARMA | CTCM | NAIV | NN  | TCM | XGBoost | Score |
 |------|------|------|------|-----|-----|---------|------|
 | NAIV | 13.0 | 16.0 | 0.0  | 17.0| 15.0| 15.0    | 76.0 |
 | TCM  | 8.0  | 12.0 | 4.0  | 15.0| 0.0 | 12.0    | 51.0 |
@@ -37,7 +37,7 @@ To obtain a comparative benchmark table for each type of time series under study
 
 ### Ranking table for benchmarks for RV
 
-|        | ARMA | CTCM | NAIV | NN   | TCM  | XGBoost | Rank  |
+|        | ARMA | CTCM | NAIV | NN   | TCM  | XGBoost | Score  |
 |--------|------|------|------|------|------|---------|-------|
 | ARMA   | 0.0  | 75.0 | 89.0 | 49.0 | 81.0 | 71.0    | 365.0 |
 | NN     | 68.0 | 60.0 | 84.0 | 0.0  | 74.0 | 42.0    | 328.0 |
